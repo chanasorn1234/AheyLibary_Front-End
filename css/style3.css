@@ -54,3 +54,60 @@ body{
 #login-link{
     margin-left: 302px;
 }
+.container{
+    background-color: white;
+    margin-top: 0px;
+    height: 800px;
+    width: 800px;
+    display: block;
+    padding-top: 45px;
+    font-family: 'KMITLGO_Bold_ver_1.00';
+    
+}
+.txt-alert{
+    color: green;
+    font-weight: bold ;
+    font-size: 1.5em;
+    font-family:inherit;
+    text-shadow:1px 1px  #00000036;
+    margin-left: 50px;
+}
+#confirm-email{
+    margin-left: 0;
+    width: 250px;
+    height: 30px;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    font-family: inherit;
+    border-color:#FD6F1F;
+    font-size: large;
+    
+  
+}
+.label-email{
+    margin-left: 220px;
+    margin-right: 5px;
+    font-weight: bold ;
+    font-size: 1.5em;
+    color: green;
+}
+.label-email,#confirm-email{
+    margin-top: 60px;
+    display: inline;
+}
+#button-forgot{
+    margin-top: 25px;
+   
+}
+.spacebtnregis{
+    text-align: center;
+}
+#button-forgot{
+    font-size: larger;
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+#button-forgot:hover{
+    transform: translate(0px,-5px);
+}
