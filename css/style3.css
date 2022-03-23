@@ -23,17 +23,16 @@ body{
     text-shadow:2px 2px  #00000036;
 
 }
-#spform-control{
+.form-control{
     margin-left: 210px;
     height: 22px;
     background-color: #FFF172;
-    padding-bottom: 0;
+    padding-bottom: 5px;
     padding-left: 2px;
     border-radius: 5px;
     font-family:'KMITLGO_Bold_ver_1.00';
     font-size: large;
     font-weight: 200;
-    width: 189px;
     
     /* padding: 2px; */
 }
@@ -54,53 +53,4 @@ body{
 }
 #login-link{
     margin-left: 302px;
-}
-.space1{
-    margin-bottom: 70px;
-}
-.form-control{
-    width: 350px;
-    padding: 0;
-    padding-left: 7px;
-    font-size: 25px;
-    
-}
-
-.container{
-    background-color: rgb(255, 255, 255);
-    padding-top: 40px;
-    padding-left: 280px;
-    padding-right: 0;
-    /* text-align: center; */
-    width: 900px;
-    height: 600px;
-    border-radius: 10px;
-    border-style: groove;
-    border-width: 1px;
-    font-family: 'KMITLGO_Bold_ver_1.00';
-    font-size: 20px;
-}
-.spacebtnregis{
-    margin-left: 77px;
-   
-}
-#buttonregis{
-    width: 200px;
-    font-size: larger;
-    border-radius: 10px;
-    transition: all 0.25s ease;
-}
-#buttonregis:hover{
-    transform: translate(0px,-5px);
-}
-.col-sm-2{
-    color: green;
-    font-size: large;
-    width: 150px;
-    font-size: 21px;
-    
-}
-.row{
-    /* margin-left: 10px; */
-    
 }
