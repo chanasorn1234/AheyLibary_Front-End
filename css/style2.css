@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'KMITLGO_Bold_ver_1.00';
+    src: url('../font/KMITLGO_Bold_ver_1.00.ttf')format("truetype");
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: #FFE3E3;
+}
+.menubar ul{
+    list-style: none;
+    background-color: #FD6F1F;
+    padding: 0;
+    margin: 0;
+    /* text-align: center; */
+  
+}
+.menubar li{
+    /* font-size: 1.3em; */
+    /* text-align: left; */
+    /* line-height: 40px; */
+    margin-top: 0;
+    padding-top: 0;
+    padding-right:25px ;
+    display:inline-block;
+    height: 32px;
+}
+.menubar a{
+    color: #FFE3E3;
+    text-decoration: none;
+    font-weight: bold ;
+    font-size: 1.5em;
+    font-family:'KMITLGO_Bold_ver_1.00';
+    text-shadow:2px 2px  #00000036;
+    display: block;
+    padding-left: 15px;
+    transition: all 0.25s ease;
+    height: 25px;
+}
+.menubar a:hover{
+    background-color:rgba(255, 61, 61, 0.877) ;
+}
+
+.menubar > ul > li > a{
+    padding-left: 0;
+}
+.logo{
+    padding-left: 40px; 
+    color: #FFF172;
+    font-weight: 800;
+    font-size: 35px;
+    font-family:'KMITLGO_Bold_ver_1.00';
+    text-shadow:2px 2px  #00000036;
+}
+.login{
+    padding-left: 300px;
+}
+.search{
+    padding-left: 200px;
+}
+.inputsearch{
+    border-radius: 5px;
+    border-color: orange;
+    font-weight: 200;
+    font-family:'KMITLGO_Bold_ver_1.00';
+    font-size: large;
+    color: red;
+    background-color: #FFF172;
+    height: 24px;
+}
+.space1{
+    margin-bottom: 70px;
+}
+.form-control{
+    width: 350px;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    padding-top: 50px;
+    padding-left: 280px;
+    padding-right: 0;
+    /* text-align: center; */
+    width: 900px;
+    height: 600px;
+    border-radius: 10px;
+    border-style: groove;
+    border-width: 1px;
+    font-family: 'KMITLGO_Bold_ver_1.00';
+    font-size: 20px;
+}
+.spacebtnregis{
+    margin-left: 77px;
+   
+}
+#buttonregis{
+    width: 200px;
+    font-size: larger;
+    border-radius: 10px;
+}
+.col-sm-2{
+    color: green;
+    font-size: large;
+    width: 150px;
+    font-size: 20px;
+    
+}
+.row{
+    /* margin-left: 10px; */
+    
+}
