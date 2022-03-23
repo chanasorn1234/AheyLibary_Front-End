@@ -75,7 +75,7 @@ body{
     left: 530px;
     font-family:'KMITLGO_Bold_ver_1.00';
     /* background-color: #ffe1d0; */
-    background-color: rgb(255, 234, 196);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     border-style: groove;
     border-width: 1px;
@@ -87,9 +87,19 @@ body{
     padding-top: 30px;
     
 }
+.user-icon{
+    width: 100px;
+    height: 100px;
+    left: 205px;
+    position: absolute;
+    background-size: contain;
+    background-image: url("../img/__ia_thumb.jpg");
+    
+  
+}
 .label-username{
     /* margin-right: 44px; */
-    padding-top: 5px;
+    padding-top: 130px;
     font-size: 30px;
     color: green;
     /* background-color: orange; */
