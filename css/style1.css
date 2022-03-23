@@ -90,7 +90,7 @@ body{
 .user-icon{
     width: 100px;
     height: 100px;
-    left: 205px;
+    left: 203px;
     position: absolute;
     background-size: contain;
     background-image: url("../img/__ia_thumb.jpg");
@@ -109,6 +109,7 @@ body{
     border-radius: 5px;
     margin-bottom: 20px;
     margin-left: 55px;
+
 }
 .label-password{
     padding-top: 5px;
@@ -139,7 +140,7 @@ body{
     border-width: 1px;
     outline: none;
     background-color:#E0E0E0;
-    font-family: 'KMITLGO_Bold_ver_1';
+    font-family: inherit;
     font-weight: 600;
     font-size: large;
 }

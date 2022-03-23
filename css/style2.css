@@ -73,10 +73,16 @@ body{
 }
 .form-control{
     width: 350px;
+    padding: 0;
+    padding-left: 7px;
+    font-size: 25px;
+    
+    
 }
+
 .container{
     background-color: rgb(255, 255, 255);
-    padding-top: 50px;
+    padding-top: 40px;
     padding-left: 280px;
     padding-right: 0;
     /* text-align: center; */
@@ -101,7 +107,7 @@ body{
     color: green;
     font-size: large;
     width: 150px;
-    font-size: 20px;
+    font-size: 21px;
     
 }
 .row{
