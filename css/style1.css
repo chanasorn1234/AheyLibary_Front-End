@@ -6,10 +6,19 @@ body{
     padding: 0;
     margin: 0;
     background: #FFE3E3;
+    box-sizing: border-box;
 }
 .navbar{
+    position: fixed;
+    width: 2000px; /*random idk*/
     background-color: #FD6F1F;
     height: 49px;
+    box-shadow: 1px 1px 10px ;
+    transform: translateY(-85%);
+    transition: transform .5s cubic-bezier(.4,0,.2,1);
+}
+.navbar:hover{
+    transform: translateY(0);
 }
 .container-fluid{
     padding-left: 45px;
