@@ -73,10 +73,12 @@ body{
     font-size: 25px;
     
 }
-
+input.form-control::placeholder{
+    opacity: 0.3;
+}
 .container{
     background-color: rgb(255, 255, 255);
-    padding-top: 60px;
+    padding-top: 40px;
     padding-left: 280px;
     padding-right: 0;
     /* text-align: center; */
@@ -108,7 +110,11 @@ body{
     font-size: 21px;
     
 }
-.row{
-    /* margin-left: 10px; */
-    
+.message{
+    color: red;
+    visibility: hidden;
+    margin: 0;
+}
+.message.erorr{
+    visibility: visible;
 }
