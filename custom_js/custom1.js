@@ -6,7 +6,10 @@ $(function(){
                 username:{
                     required: true,
                     minlength:3,
-                    maxlength:12
+                    maxlength:12,
+                    remote:{
+                        url:"mock_checkexist.php"
+                    }
                 },
                 password:{
                     required:true,
@@ -27,7 +30,8 @@ $(function(){
                 username:{
                     required:'กรุณาป้อนชื่อผู้ใช้งาน',
                     minlength:'ต้องมีอย่างน้อย 3 ตัวอักษร',
-                    maxlength:'ต้องมีอย่างมากไม่เกิน 12 ตัวอักษร'
+                    maxlength:'ต้องมีอย่างมากไม่เกิน 12 ตัวอักษร',
+                    remote:'ชื่อนี้มีผู้ใช้งานแล้ว'
                 },
                 password:{
                     required:'กรุณาป้อนรหัสผ่าน',
@@ -45,6 +49,7 @@ $(function(){
             }
         })
     }
+    
 })
 
 
