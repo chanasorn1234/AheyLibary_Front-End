@@ -1,6 +1,8 @@
 <?php include 'mock_connect.php';?>
 <?php
-    echo 'false';
+
+    $username = $_GET['username'];
+    echo $username;
     // $inputname = $_POST["username"];
     // $sql = "SELECT * FROM member WHERE userid = $inputname";
     // $result = mysqli_query($connect,$sql);
@@ -9,6 +11,5 @@
     // if ($row > 0){
         
     // }
-
-
 ?>
+
