@@ -377,7 +377,7 @@ ul.summary-list > li:last-child  {
 .activity-desk .album a:last-child{
     margin-right: 0px;
 }
-.wrapper{
+#wrapper{
     display: flex;
     /* border: 5px solid #8dd7d6; */
     height: 19rem;
@@ -391,6 +391,7 @@ ul.summary-list > li:last-child  {
     line-height: 90px;
     color: black;
     text-align: center;
+    margin-right: 70px;
     
 }
 .wrapper2{

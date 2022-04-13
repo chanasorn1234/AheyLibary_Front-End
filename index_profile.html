@@ -41,10 +41,10 @@
               <div class="panel">
                   <div class="user-heading round">
                       <a href="#">
-                          <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="">
+                          <img src="../img/__ia_thumb.jpg" alt="">
                       </a>
-                      <h1>Camila Smith</h1>
-                      <p>deydey@theEmail.com</p>
+                      <h1 id="user_profile">Camila Smith</h1>
+                      <p id="email_profile">deydey@theEmail.com</p>
                   </div>
               </div>
           </div>
@@ -54,28 +54,10 @@
                       <h1>About</h1>
                       <div class="row" style="background-color: #fbc02d;padding: 25px;border-radius: 5px; height: 15rem;">
                           <div class="bio-row">
-                              <p style="color: white; font-size: 15px;"><span>First Name </span>: Camila</p>
-                          </div>
-                          <div class="bio-row">
-                              <p style="color: white; font-size: 15px;"><span>Last Name </span>: Smith</p>
-                          </div>
-                          <div class="bio-row">
-                              <p style="color: white; font-size: 15px;"><span>Country </span>: Australia</p>
-                          </div>
-                          <div class="bio-row">
-                              <p style="color: white; font-size: 15px;"><span>Birthday</span>: 13 July 1983</p>
-                          </div>
-                          <div class="bio-row">
-                              <p style="color: white;font-size: 15px;"><span>Occupation </span>: UI Designer</p>
-                          </div>
-                          <div class="bio-row">
-                              <p style="color: white;font-size: 15px;"><span>Email </span>: jsmith@flatlab.com</p>
-                          </div>
-                          <div class="bio-row">
-                              <p style="color: white;font-size: 15px;"><span>Mobile </span>: (12) 03 4567890</p>
-                          </div>
-                          <div class="bio-row">
-                              <p style="color: white;font-size: 15px;"><span>Phone </span>: 88 (02) 123456</p>
+                              <p style="color: white; font-size: 15px;" id="fname"></p>
+                              <p style="color: white; font-size: 15px;" id="pword"></p>
+                              <p style="color: white; font-size: 15px;" id="cpword"></p>
+                              <p style="color: white; font-size: 15px;" id="e_mail"></p>
                           </div>
                       </div>
                   </div>
@@ -87,21 +69,18 @@
         </div>
         <span style="margin-left:7.5vw ; font-size: 21px;">Read On</span>
         <div style="height: 20rem;width:81.5rem ;margin-left: 7.5vw;margin-top: 20px; background-color: rgb(227, 227, 227); padding: 10px; border-radius: 5px;">
-          <div class="wrapper">
-              <div class="itembook"><a href="#"><img
-                src="https://www.cp.eng.chula.ac.th/books/wp-content/uploads/sites/5/2018/08/python_cover_v2.png"
-                class="d-block w-100 h-75 img-thumbnail img-fluid mb-2"></a><button type="button" class="btn btn-success btn-sm" style="width: 100px;" data-bs-toggle="modal" data-bs-target="#exampleModal">อ่านต่อ
-                </button></div>
-              <div class="itembook">box2</div>
+          <div id="wrapper">
+               <!-- <div class="itembook"><div id="picture"></div></div> -->
+              <!--<div class="itembook">box2</div>
               <div class="itembook">box3</div>
               <div class="itembook">box4</div>
-              <div class="itembook">box5</div>
+              <div class="itembook">box5</div> -->
           </div>
         </div>
         <br>
         <br>
         <span style="margin-left:7.5vw ; font-size: 21px;">My Thread</span>
-        <div style="height: 20rem;width:81.5rem ;margin-left: 7.5vw;margin-top: 20px; background-color: rgb(227, 227, 227); padding: 10px; border-radius: 5px;">
+        <div style="height: 32rem;width:81.5rem ;margin-left: 7.5vw;margin-top: 20px; background-color: rgb(227, 227, 227); padding: 10px; border-radius: 5px;">
             <div class="wrapper2">
                 <div class="itemthread">
                     <div class="row g-0 bg-light position-relative">
@@ -127,7 +106,7 @@
                             <p>Another instance of placeholder content for this other custom component. It is intended
                                 to mimic what some real-world content would look like, and we're using it here to give
                                 the component a bit of body and size. (เนื้อหา)</p>
-                            <a href="Go_Thread.html" class="stretched-link">ไปหน้ากระทู้</a>
+                                <button type="button" class="btn btn-success btn-sm" style="width: 100px;" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="Go_Thread.html" style="text-decoration: none; color: white;">ไปหน้ากระทู้</a></button>
                         </div>
                     </div>
                 </div>
@@ -137,5 +116,6 @@
 
 
     <script src="js/bootstrap.min.js"></script>
+    <script src="custom_js/custom2.js"></script>
 </body>
 </html>
