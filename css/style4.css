@@ -8,7 +8,7 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
-    height: 2048px;
+    height: 100rem;
 }
 
 .profile-nav, .profile-info{
@@ -382,6 +382,7 @@ ul.summary-list > li:last-child  {
     /* border: 5px solid #8dd7d6; */
     height: 19rem;
     overflow-x: auto;
+    overflow-y: hidden;
     left: 100px;
     padding-left: 30px;
 }
@@ -394,14 +395,31 @@ ul.summary-list > li:last-child  {
     margin-right: 70px;
     
 }
-.wrapper2{
+#wrapper2{
     display: grid;
     overflow-x: auto;
     height: 30rem;
 }
 .itemthread{
     min-width: 200px;
-    height: 250px;
-    /* line-height: 50px; */
+    line-height: 50px;
     color: black;
+    margin-bottom: 0px;
+    
+    
+}
+#t_imger , #t_boxtext {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+#t_boxtext{
+    background-color: white;
+    max-width: 200px;
+    min-width: 1000px;
+    max-height: 200px;
+    min-height: 200px;
+    border-radius: 6px;
+    padding: 10px;
+    line-height: 25px;
 }

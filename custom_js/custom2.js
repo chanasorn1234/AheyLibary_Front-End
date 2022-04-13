@@ -41,6 +41,40 @@ for(var i=0;i<=10;i++){
 }
 //--------------------------------------------------------------------------------------------------------------
 
+//เจนกระทู้ของuser-------------------------------------------------------------------------------------------
+for(var j=0;j<=5;j++){
+    var mom3 = document.getElementById('wrapper2')
+    var tchild1 = document.createElement('div')
+    tchild1.classList.add('itemthread')
+    mom3.appendChild(tchild1)
+    var t_row = document.createElement('div')
+    tchild1.appendChild(t_row)
+    var timg =  document.createElement('img')
+    timg.id = 't_imger'
+    t_row.appendChild(timg)
+    timg.src = "https://www.cp.eng.chula.ac.th/books/wp-content/uploads/sites/5/2018/08/python_cover_v2.png"
+    t_row.appendChild(timg)
+    timg.style.width = "150px"
+    timg.style.height = "200px"
+    timg.style.marginLeft = "30px"
+    timg.style.verticalAlign = "top"
+    var tbox_text = document.createElement('div')
+    tbox_text.id = 't_boxtext'
+    tbox_text.style.marginLeft = "25px"
+    t_row.appendChild(tbox_text)
+    tbox_text.innerHTML = 'Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we are using it here to give the component a bit of body and size. (เนื้อหา)'
+    var tbutt = document.createElement('button')
+    tbutt.id = "tbtt"+j.toString()
+    tbutt.classList.add('btn')
+    tbox_text.appendChild(tbutt)
+    tbutt.style.backgroundColor = "green"
+    tbutt.style.color = "white"
+    tbutt.style.marginLeft = "55rem"
+    tbutt.style.marginTop = "5rem"
+    tbutt.style.height = "40px"
+    tbutt.innerHTML = "ไปที่กระทู้"
 
+}
+//---------------------------------------------------------------------------------------------------------------
 
 
