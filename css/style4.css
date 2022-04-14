@@ -8,7 +8,7 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
-    height: 100rem;
+    height: 140rem;
 }
 
 .profile-nav, .profile-info{
@@ -395,6 +395,47 @@ ul.summary-list > li:last-child  {
     margin-right: 70px;
     
 }
+#mylibwrapper{
+    display: flex;
+    /* border: 5px solid #8dd7d6; */
+    height: 30rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    left: 100px;
+    padding-left: 30px;
+}
+#rowitemmylib{
+    height: 100px;
+    /* margin-bottom: 10px; */
+    display: grid;
+}
+#mylibpicture{
+    display: inline;
+    /* margin: 0px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #wrapper2{
     display: grid;
     overflow-x: auto;

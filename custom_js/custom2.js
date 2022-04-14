@@ -40,7 +40,30 @@ for(var i=0;i<=10;i++){
     newdiv.appendChild(butt)
 }
 //--------------------------------------------------------------------------------------------------------------
+//เจนหนังสือในคลังของเรา-------------------------------------------------------------------------------
+var amountbook = 7
 
+var mom2 = document.getElementById('mylibwrapper')
+var col_child = document.createElement('div')
+col_child.classList.add('mylibpicture')
+var lib_child = document.createElement('div')
+lib_child.classList.add('rowitemmylib')
+for(var m=0;m<amountbook;m++){
+    var linkbook = document.createElement('a')
+    var lib_img = document.createElement('img')
+    lib_img.src = "https://www.cp.eng.chula.ac.th/books/wp-content/uploads/sites/5/2018/08/python_cover_v2.png"
+    linkbook.href = "#"
+    lib_img.style.width = "150px"
+    lib_img.style.height = "200px"
+    lib_img.style.marginLeft = "5rem"
+    lib_img.style.marginBottom = "5rem"
+    mom2.appendChild(lib_child)
+    lib_child.appendChild(col_child)
+    col_child.appendChild(linkbook)  
+    linkbook.appendChild(lib_img)
+
+}
+//--------------------------------------------------------------------------------------------------
 //เจนกระทู้ของuser-------------------------------------------------------------------------------------------
 for(var j=0;j<=5;j++){
     var mom3 = document.getElementById('wrapper2')
