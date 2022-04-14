@@ -5,16 +5,88 @@ var passemail = document.getElementById('e_mail')
 var userprofile = document.getElementById('user_profile')
 var useremail = document.getElementById('email_profile')
 
+
 //เจนข้อมูล user------------------------------------------------------------------------------------
 userprofile.innerHTML = 'chanasorn1234'
 useremail.innerHTML = 'chanasorn1234@gmail.com'
 
-passname.innerHTML = 'Username\xa0\xa0\xa0\xa0\xa0\xa0\xa0:\xa0'+'xxx'
-pass_password.innerHTML = 'Password\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0:\xa0'+'xxx'
-pass_confirmpassword.innerHTML = 'Confirm\xa0password\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0:\xa0'+'xxx'
-passemail.innerHTML = 'E-mail\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0:\xa0'+'xxx'
+passname.innerHTML = '\xa0xxx'
+pass_password.innerHTML = '\xa0xxx'
+pass_confirmpassword.innerHTML = '\xa0xxx'
+passemail.innerHTML = '\xa0xxx'
 
 //-------------------------------------------------------------------------------------------------
+document.getElementById('btnedit_profile').addEventListener('click', function() {
+//    var tog = document.getElementById('btnedit_profile').value
+   if(document.getElementById('btnedit_profile').value === 'editing'){
+    document.getElementById('btnedit_profile').value = 'done'   
+    var preusername = document.getElementById('fname')
+    var prepassword = document.getElementById('pword')
+    var preconfirmpassword = document.getElementById('cpword')
+    var edit_butt = document.getElementById('btnedit_profile')
+    edit_butt.innerHTML = 'Update'
+    passname.innerHTML = `<input type="text" id="edituserid" name="username" value="${preusername.innerHTML}"/>`
+    pass_password.innerHTML = `<input type="text" id="edituserpassword" name="password" value="${prepassword.innerHTML}"/>`
+    pass_confirmpassword.innerHTML = `<input type="text" id="editconfirmpassword" name="confirmpassword" value="${preconfirmpassword.innerHTML}"/>`   
+}
+   
+    const newusername = document.getElementById('edituserid')
+    const newpassword = document.getElementById('edituserpassword')
+    const newconpassword = document.getElementById('editconfirmpassword')
+
+    document.getElementById('btnedit_profile').onclick = function(){
+        console.log(newusername.value,newpassword.value,newconpassword.value)
+        var result = checknewusername(newusername.value)
+        var result2 = checknewpassword(newpassword.value)
+        var result3 = checkconpassword(newpassword.value,newconpassword.value)
+        if(result === true && result2 === true && result3 == true){
+        window.location.href = 'index_profile.html'}
+    }
+    
+})
+
+function checknewusername(username){
+    if(username === ""){
+        alert('กรุณาป้อนชื่อผู้ใช้งาน')
+        return false
+    }
+    if(username.length <3){
+        alert('ชื่อผู้ใช้ต้องไม่น้อยกว่า 3 หลัก')
+        return false
+    }
+    if(username.length > 12){
+        alert('ชื่อผู้ใช้ต้องไม่เกิน 12 หลัก')
+        return false
+    }
+    if(username.indexOf(' ')>=0){
+        alert('ไม่อนุญาตให้มีเว้นวรรค')
+        return false
+    }
+    return true
+}
+function checknewpassword(password){
+    if(password ===""){
+        alert('กรุณาป้อนรหัสผ่าน')
+        return false
+    }
+    return true
+}
+function checkconpassword(password,conpassword){
+    if(conpassword === ""){
+        alert('กรุณาป้อนรหัสผ่านอีกครั้งเพื่อยืนยัน')
+        return false
+    }
+    if(password != conpassword){
+        alert('รหัสผ่านไม่เหมือนกัน')
+        return false
+    }
+    return true
+}
+
+
+
+
+
 
 //เจนหนังสือที่อ่านค้างไว้---------------------------------------------------------------------------------
 for(var i=0;i<=10;i++){

@@ -35,7 +35,7 @@
       </nav>
 
     <br>
-    <div class="container bootstrap snippets bootdey">
+    <div id="con_profile" class="container bootstrap snippets bootdey">
         <div class="row">
           <div class="profile-nav col-md-3">
               <div class="panel">
@@ -54,10 +54,14 @@
                       <h1>About</h1>
                       <div class="row" style="background-color: #fbc02d;padding: 25px;border-radius: 5px; height: 15rem;">
                           <div class="bio-row">
-                              <p style="color: white; font-size: 15px;" id="fname"></p>
-                              <p style="color: white; font-size: 15px;" id="pword"></p>
-                              <p style="color: white; font-size: 15px;" id="cpword"></p>
-                              <p style="color: white; font-size: 15px;" id="e_mail"></p>
+                                <form id="edit_info"></form>
+                                    <p style="color: white; font-size: 15px;display: inline; word-spacing:4.8rem;" >Username :<p style="color: white; font-size: 15px; display: inline;" id="fname"></p></p>
+                                    <p style="color: white; font-size: 15px;display: inline; word-spacing:5.1rem;" >Password :<p style="color: white; font-size: 15px; display: inline;" id="pword"></p></p>
+                                    <p style="color: white; font-size: 15px;display: inline; word-spacing:0.8rem;" >Confirm password :<p style="color: white; font-size: 15px; display: inline;" id="cpword"></p></p>
+                                    <p style="color: white; font-size: 15px;display: inline; word-spacing:6.5rem;" >E-mail :<p style="color: white; font-size: 15px; display: inline;" id="e_mail"></p></p>
+                                    <!-- <input id="edituserid" name="name" type="text" size="20"> -->
+                                    <button type="submit" id="btnedit_profile" class="btn" value="editing">Edit</button>
+                                </form>
                           </div>
                       </div>
                   </div>
@@ -124,5 +128,7 @@
 
     <script src="js/bootstrap.min.js"></script>
     <script src="custom_js/custom2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
 </body>
 </html>
