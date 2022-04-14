@@ -404,7 +404,7 @@ ul.summary-list > li:last-child  {
     min-width: 200px;
     line-height: 50px;
     color: black;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
     
     
 }
@@ -422,4 +422,20 @@ ul.summary-list > li:last-child  {
     border-radius: 6px;
     padding: 10px;
     line-height: 25px;
+   
+    
+}
+#t_butt{
+    background-color: green;
+    color: white;
+    margin-left: 55rem;
+    margin-top: 1rem;
+    position: relative;
+    height: 40px;
+}
+.display_text{
+    height: 190px;
+    max-width: 950px !important;
+    display: block;
+    /* overflow-x: scroll; */
 }

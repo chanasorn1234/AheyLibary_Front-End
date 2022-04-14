@@ -62,16 +62,15 @@ for(var j=0;j<=5;j++){
     tbox_text.id = 't_boxtext'
     tbox_text.style.marginLeft = "25px"
     t_row.appendChild(tbox_text)
-    tbox_text.innerHTML = 'Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we are using it here to give the component a bit of body and size. (เนื้อหา)'
+    var textt = document.createElement('div')
+    textt.classList.add('display_text')
+    tbox_text.appendChild(textt) 
+    textt.innerHTML = 'Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we are using it here to give the component a bit of body and size. (เนื้อหา)'
     var tbutt = document.createElement('button')
     tbutt.id = "tbtt"+j.toString()
     tbutt.classList.add('btn')
+    tbutt.id = 't_butt'
     tbox_text.appendChild(tbutt)
-    tbutt.style.backgroundColor = "green"
-    tbutt.style.color = "white"
-    tbutt.style.marginLeft = "55rem"
-    tbutt.style.marginTop = "5rem"
-    tbutt.style.height = "40px"
     tbutt.innerHTML = "ไปที่กระทู้"
 
 }
