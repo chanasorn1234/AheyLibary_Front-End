@@ -26,8 +26,8 @@ document.getElementById('btnedit_profile').addEventListener('click', function() 
     var edit_butt = document.getElementById('btnedit_profile')
     edit_butt.innerHTML = 'Update'
     passname.innerHTML = `<input type="text" id="edituserid" name="username" value="${preusername.innerHTML}"/>`
-    pass_password.innerHTML = `<input type="text" id="edituserpassword" name="password" value="${prepassword.innerHTML}"/>`
-    pass_confirmpassword.innerHTML = `<input type="text" id="editconfirmpassword" name="confirmpassword" value="${preconfirmpassword.innerHTML}"/>`   
+    pass_password.innerHTML = `<input type="password" id="edituserpassword" name="password" value="${prepassword.innerHTML}"/>`
+    pass_confirmpassword.innerHTML = `<input type="password" id="editconfirmpassword" name="confirmpassword" value="${preconfirmpassword.innerHTML}"/>`   
 }
    
     const newusername = document.getElementById('edituserid')
@@ -67,6 +67,18 @@ function checknewusername(username){
 function checknewpassword(password){
     if(password ===""){
         alert('กรุณาป้อนรหัสผ่าน')
+        return false
+    }
+    if(password.length < 4){
+        alert('รหัสผ่านต้องไม่น้อยกว่า 4 หลัก')
+        return false
+    }
+    if(password.length >20){
+        alert('รหัสผ่านต้องไม่เกิน 20 หลัก')
+        return false
+    }
+    if(password.indexOf(' ')>=0){
+        alert('ไม่อนุญาตให้มีเว้นวรรค')
         return false
     }
     return true

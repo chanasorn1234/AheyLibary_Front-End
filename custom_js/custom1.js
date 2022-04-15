@@ -6,7 +6,7 @@ $(function(){
                 username:{
                     required: true,
                     minlength:3,
-                    maxlength:12,
+                    maxlength:13,
                     remote:{
                         url:"mock_checkexist.php"
                     }
@@ -14,7 +14,7 @@ $(function(){
                 password:{
                     required:true,
                     minlength:4,
-                    maxlength:10
+                    maxlength:20
 
                 },
                 confirmpassword:{
