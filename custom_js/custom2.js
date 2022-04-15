@@ -1,7 +1,7 @@
-var passname = document.getElementById('fname')
-var pass_password = document.getElementById('pword')
-var pass_confirmpassword = document.getElementById('cpword')
-var passemail = document.getElementById('e_mail')
+// var passname = document.getElementById('fname')
+// var pass_password = document.getElementById('pword')
+// var pass_confirmpassword = document.getElementById('cpword')
+// var passemail = document.getElementById('e_mail')
 // var userprofile = document.getElementById('user_profile')
 // var useremail = document.getElementById('email_profile')
 

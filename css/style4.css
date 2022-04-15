@@ -153,6 +153,12 @@ body {
 #edituserid:focus{
     outline: none;
 }
+#buttpayment{
+    transition: all 0.25s ease;
+}
+#buttpayment:hover{
+    transform: translate(0px,-3px);
+}
 .bio-graph-heading {
     background: #fbc02d;
     color: #fff;
