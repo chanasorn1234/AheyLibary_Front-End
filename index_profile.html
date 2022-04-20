@@ -69,8 +69,21 @@
                                     <p style="color: white; font-size: 15px;display: inline; word-spacing:0.5rem;" ><i class="fa-solid fa-check"></i> Confirm password :<p style="color: white; font-size: 15px; display: inline;" id="cpword"></p></p>
                                     <p style="color: white; font-size: 15px;display: inline; word-spacing:0.5rem;" ><i class="fa-solid fa-envelope"></i> E-mail<p style="color: white; font-size: 15px;display: inline; word-spacing:5.8rem;"> :</p><p style="color: white; font-size: 15px; display: inline;" id="e_mail"></p></p>
                                     <!-- <input id="edituserid" name="name" type="text" size="20"> -->
-                                    <button type="submit" id="btnedit_profile" class="btn" value="editing">Edit</button>
+                                    <button type="submit" id="btnedit_profile" class="btn" value="editing"  >Edit</button>
                                 </form>
+                                <!-------------------------------- popup สำหรับใส่รหัสผ่านยืนยัน ----------------------------------->
+                                <div class="modal_contain" id="modal_contain">
+                                    <div class="modal_body">
+                                            <p class="popcon_header">กรุณาป้อนรหัสผ่านเก่าเพื่อยืนยัน</p>
+                                        <!-- <form id="form_popcon"> -->
+                                            <input type="password" class="form-control" id="popcon_password" placeholder="Password">
+                                            <div id="error_messsage"></div>
+                                            <button type="submit" class="btn" id="popcon">Confirm</button>
+                                            <button type="submit" class="btn" id="popcancle">Cancle</button>
+                                        <!-- </form> -->
+                                    </div>
+                                </div>
+                                <!-------------------------------- END ----------------------------------->
                                 <script>
                                     var passname = document.getElementById('fname')
                                     var pass_password = document.getElementById('pword')
@@ -111,7 +124,30 @@
                                             var result2 = checknewpassword(newpassword.value) //-------เช็คว่า password ถูกต้องหรือไม่
                                             var result3 = checkconpassword(newpassword.value,newconpassword.value) //เช็คว่า password ตรงกันหรือไม่
                                             if(result === true && result2 === true && result3 == true){  //ข้อมูลถูกต้องหมด
-                                            window.location.href = 'index_profile.html'}
+                                            //------------------จัดการ popup------------------
+                                            popup = document.getElementById('modal_contain')
+                                            popup.classList.add('show') //แสดง popup จากไฟล์ css style4
+                                            const popcon_password = document.getElementById('popcon_password')
+                                            const error_messsage = document.getElementById('error_messsage')
+                                            document.getElementById('popcon').onclick = function(){ //กดปุ่ม Confirm
+                                                if(popcon_password.value === '1234'){ //เช็ครหัสผ่าน
+                                                    window.location.href = 'index_profile.html'
+                                                }
+                                                else{
+                                                    console.log('fail')
+                                                    error_messsage.innerHTML = 'รหัสผ่านไม่ถูกต้อง'
+                                                }
+                                            }
+                                            document.getElementById('popcancle').onclick = function(){//กดปุ่ม Cancle
+                                                popup.classList.remove('show')
+                                                popcon_password.value=''
+                                                error_messsage.innerHTML = ''
+                                                window.location.href = 'index_profile.html'
+                                                
+                                            }
+                                            //---------------------------------------------------------------
+                                            
+                                            }
                                         }
                                         
                                     })

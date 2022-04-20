@@ -528,3 +528,55 @@ ul.summary-list > li:last-child  {
     display: block;
     /* overflow-x: scroll; */
 }
+
+.modal_contain{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+.modal_body{
+    background-color: rgb(255, 211, 129);
+    width: 600px;
+    max-width: 100%;
+    padding: 30px;
+    border-radius: 5px;
+}
+#popcon_password{
+    width: 18rem;
+}
+#popcon{
+    margin-left: 22.5rem;
+    background-color: green;
+    color: white;
+}
+#popcancle{
+    margin-left: 1rem;
+    background-color: gray;
+    color: white;
+}
+.modal_contain.show
+{
+    opacity: 1;
+    pointer-events: auto;
+}
+#error_messsage{
+    /* opacity: 1; */
+    color: red;
+    font-weight: bold;
+    margin-top: 4px;
+}
+.popcon_header{
+    font-size: large;
+    font-weight: bold;
+    color: green;
+    /* background-color: #90b4e6; */
+}
